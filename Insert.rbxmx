@@ -1,0 +1,58 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Script" referent="RBX164E976D1FFF4DE99C5F553E1A8DEA50">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">Script</string>
+			<string name="ScriptGuid"></string>
+			<ProtectedString name="Source"><![CDATA[local function call_on_descendants(instance, func)
+	func(instance)
+	for _, child in next, instance:GetChildren() do
+		call_on_descendants(child, func)
+	end
+end
+
+function lock()
+	call_on_descendants(game.Workspace, function(descendant)
+	if descendant:IsA("BasePart") then
+		descendant.Locked = true
+		script.AntiUnlock:Clone().Parent = descendant
+	end
+	end)
+	--m = Instance.new("Hint")
+	--m.Text = "This server is protected by PIA anti exploits. Any attempt to use building tools will FAIL and suspicious activity will be reported. #ExploitersLoose"
+	--m.Parent = game.Workspace
+	script.Parent:Destroy()
+end
+
+lock()
+
+
+--9/14/15
+--Developed by the Pinewood Intelligence Agency in efforts to stop the [TestService b-tool] exploits of September '15.
+--Written by SigmaTech]]></ProtectedString>
+		</Properties>
+		<Item class="Script" referent="RBXA188C0B25BB14374BAD1FAD6E68A2359">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">AntiUnlock</string>
+				<string name="ScriptGuid"></string>
+				<ProtectedString name="Source"><![CDATA[--!SigmaTech
+
+function hackedbrick(change)
+	if change == "Locked" then
+		script.Parent.Locked = true
+	end
+end
+
+script.Parent.Changed:connect(hackedbrick)
+
+--8/3/13 2:51 PM PST
+]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
