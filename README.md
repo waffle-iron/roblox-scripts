@@ -1,4 +1,4 @@
-[![GitHub version](https://badge.fury.io/gh/hernikplays%2Froblox-scripts.svg)](https://badge.fury.io/gh/hernikplays%2Froblox-scripts) [![release](http://github-release-version.herokuapp.com/github/hernikplays/roblox-scripts/release.png?style=flat)](https://github.com/allure-framework/allure-core/releases/latest) ![downloads](https://img.shields.io/github/downloads/hernikplays/roblox-scripts/total.svg)
+[![GitHub version](https://badge.fury.io/gh/hernikplays%2Froblox-scripts.svg)](https://badge.fury.io/gh/hernikplays%2Froblox-scripts) [![release](http://github-release-version.herokuapp.com/github/hernikplays/roblox-scripts/release.png?style=flat)](https://github.com/allure-framework/allure-core/releases/latest) ![downloads](https://img.shields.io/github/downloads/hernikplays/roblox-scripts/total.svg) ![license](https://img.shields.io/github/license/hernikplays/roblox-scripts.svg) ![commits](https://img.shields.io/github/hernikplays/roblox-scripts.svg)
 # roblox-scripts
 Here I put my scripts.
 
