@@ -1,4 +1,4 @@
-[![GitHub version](https://badge.fury.io/gh/hernikplays%2Froblox-scripts.svg)](https://badge.fury.io/gh/hernikplays%2Froblox-scripts)
+[![GitHub version](https://badge.fury.io/gh/hernikplays%2Froblox-scripts.svg)](https://badge.fury.io/gh/hernikplays%2Froblox-scripts) [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 # roblox-scripts
 Here I put my scripts.
 
